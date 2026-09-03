@@ -1,0 +1,74 @@
+{
+  "datasets": {
+    "visdrone_det_test": {
+      "path": "/home/alien/Downloads/VisDrone2019-DET-test-dev",
+      "exists": true,
+      "ready": true,
+      "missing_children": []
+    },
+    "visdrone_mot_test": {
+      "path": "/home/alien/sam3/Master_thesis_experiments/datasets/raw/VisDrone2019-MOT-test-dev",
+      "exists": true,
+      "ready": true,
+      "missing_children": []
+    },
+    "refdrone_test": {
+      "path": "/home/alien/sam3/Master_thesis_experiments/datasets/raw/RefDrone",
+      "exists": true,
+      "ready": true,
+      "missing_children": []
+    }
+  },
+  "models": {
+    "yolo": {
+      "path": "/home/alien/sam3/yolov8x.pt",
+      "exists": true,
+      "ready": true
+    },
+    "yolo_world": {
+      "path": "/home/alien/sam3/Master_thesis_experiments/models/yolov8x-worldv2.pt",
+      "exists": true,
+      "ready": true
+    },
+    "sam3_original": {
+      "path": "/home/alien/.cache/huggingface/hub/models--facebook--sam3/snapshots/3c879f39826c281e95690f02c7821c4de09afae7/sam3.pt",
+      "exists": true,
+      "ready": true
+    },
+    "sam3_adapted_no_replay": {
+      "path": "/home/alien/sam3/Master_thesis_experiments/models/sam3_fasdd_no_replay_merged.pt",
+      "exists": true,
+      "ready": true
+    },
+    "sam3_adapted_with_replay": {
+      "path": "/home/alien/sam3/finetune_sam3/checkpoint_25_merged.pt",
+      "exists": true,
+      "ready": true
+    },
+    "sam3_adapted_with_replay_unfrozen_raw": {
+      "path": "/home/alien/sam3/finetune_sam3/all_model/best_sam3_stage2B.pt",
+      "exists": true,
+      "ready": true
+    },
+    "sam3_adapted_with_replay_unfrozen_merged": {
+      "path": "/home/alien/sam3/Master_thesis_experiments/models/sam3_stage2b_unfrozen_merged.pt",
+      "exists": true,
+      "ready": true
+    }
+  },
+  "python_packages": {
+    "torch": true,
+    "cv2": true,
+    "ultralytics": true,
+    "numpy": true,
+    "scipy": true,
+    "pycocotools": true,
+    "decord": true,
+    "clip": true
+  },
+  "invariants": {
+    "track_id_source_required": "sam3_native",
+    "track_id_source_valid": true
+  },
+  "blocking_items": []
+}

@@ -1,0 +1,41 @@
+{
+  "seed": 42,
+  "paths": {
+    "visdrone_det_test": "/home/alien/Downloads/VisDrone2019-DET-test-dev",
+    "visdrone_mot_test": "/home/alien/sam3/Master_thesis_experiments/datasets/raw/VisDrone2019-MOT-test-dev",
+    "refdrone_test": "/home/alien/sam3/Master_thesis_experiments/datasets/raw/RefDrone"
+  },
+  "models": {
+    "yolo": "/home/alien/sam3/yolov8x.pt",
+    "yolo_world": "/home/alien/sam3/Master_thesis_experiments/models/yolov8x-worldv2.pt",
+    "sam3_original": "/home/alien/.cache/huggingface/hub/models--facebook--sam3/snapshots/3c879f39826c281e95690f02c7821c4de09afae7/sam3.pt",
+    "sam3_adapted_no_replay": "/home/alien/sam3/Master_thesis_experiments/models/sam3_fasdd_no_replay_merged.pt",
+    "sam3_adapted_with_replay": "/home/alien/sam3/finetune_sam3/checkpoint_25_merged.pt",
+    "sam3_adapted_with_replay_unfrozen_raw": "/home/alien/sam3/finetune_sam3/all_model/best_sam3_stage2B.pt",
+    "sam3_adapted_with_replay_unfrozen_merged": "/home/alien/sam3/Master_thesis_experiments/models/sam3_stage2b_unfrozen_merged.pt"
+  },
+  "experiment1": {
+    "categories": ["car", "person", "bus", "van", "truck", "motorcycle"],
+    "scale_metric": "sqrt(width*height)",
+    "scale_ranges": {"tiny": [null, 32], "small": [32, 64], "regular": [64, null]},
+    "iou_threshold": 0.5,
+    "baselines": ["yolo", "yolo_world", "sam3_original", "sam3_adapted_no_replay", "sam3_adapted_with_replay"]
+  },
+  "experiment2": {
+    "track_id_source_required": "sam3_native",
+    "conditions": {
+      "partial_occlusion": 50,
+      "temporary_complete_disappearance": 50,
+      "scale_decrease_and_recovery": 50,
+      "camera_motion_or_blur": 10
+    },
+    "iou_threshold": 0.5
+  },
+  "experiment3": {
+    "categories": ["person", "car", "truck", "bus", "motorcycle"],
+    "synonyms": {"person": "human", "car": "automobile", "truck": "lorry", "motorcycle": "motorbike"},
+    "specificity_examples": 50,
+    "specificity_layers": 3,
+    "iou_threshold": 0.5
+  }
+}

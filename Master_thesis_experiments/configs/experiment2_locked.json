@@ -1,0 +1,46 @@
+{
+  "locked_on": "2026-07-22",
+  "dataset": {
+    "name": "VisDrone2019-MOT-test-dev",
+    "root": "/home/alien/sam3/Master_thesis_experiments/datasets/raw/VisDrone2019-MOT-test-dev",
+    "archive_sha256": "758abe40bf20246e7e778ac61eaa557cf004b034b6e68e85006e5add68e17eb5",
+    "sequences": 17,
+    "frames": 7635
+  },
+  "event_selection": {
+    "seed": 42,
+    "partial_occlusion": "contiguous official occlusion=1 run, bracketed by annotated target frames",
+    "temporary_complete_disappearance": "2-90 frame internal GT gap bracketed by the same target ID",
+    "scale_decrease_and_recovery": "small/regular to tiny (sqrt(w*h)<32) to small/regular",
+    "camera_motion_or_blur": "sequence-relative bottom-10% Laplacian sharpness or top-10% phase-correlation motion run",
+    "requested_counts": {
+      "partial_occlusion": 50,
+      "temporary_complete_disappearance": 50,
+      "scale_decrease_and_recovery": 50,
+      "camera_motion_or_blur": 10
+    },
+    "synthetic_cloud_required": false
+  },
+  "models": {
+    "original_sam3": "/home/alien/.cache/huggingface/hub/models--facebook--sam3/snapshots/3c879f39826c281e95690f02c7821c4de09afae7/sam3.pt",
+    "sam3_native_id_refinement": "Original SAM 3; native text-grounded obj_id refined at the pre-event GT center",
+    "adapted_sam3_with_replay": "/home/alien/sam3/finetune_sam3/checkpoint_25_merged.pt"
+  },
+  "inference": {
+    "track_id_source": "sam3_native",
+    "external_id_linker": null,
+    "input_max_side": 1008,
+    "max_objects_per_event": 10,
+    "original_detection_threshold_from_det_validation": 0.48943960666656494,
+    "adapted_detection_threshold_from_det_validation": 0.4773983955383301,
+    "new_detection_threshold": 0.7,
+    "temporal_disambiguation": true
+  },
+  "evaluation": {
+    "iou_threshold": 0.5,
+    "recovery_window_visible_frames": 10,
+    "frame_recall": "same native obj_id IoU>=0.5 matches divided by visible target GT frames",
+    "recovery_rate": "eligible events where the same native obj_id matches within the recovery window",
+    "ap50": "101-point target-track AP at IoU=0.5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "model": "Adapted SAM 3 with replay (Ours)",
+  "checkpoint": "/home/alien/sam3/finetune_sam3/checkpoint_25_merged.pt",
+  "evaluation_type": "qualitative_generalization_without_ground_truth",
+  "operating_threshold": 0.4773983955383301,
+  "threshold_source": "frozen_VisDrone_DET_validation",
+  "manual_box_editing": false,
+  "ground_truth_available": false,
+  "quantitative_metrics_permitted": false,
+  "source_predictions": "/home/alien/sam3/Master_thesis_experiments/results/own_flight_data_review/ours_raw_predictions.jsonl",
+  "rendered_panel_count": 20
+}

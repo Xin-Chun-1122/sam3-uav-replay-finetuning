@@ -1,0 +1,3443 @@
+{
+  "protocol": {
+    "track_id_source": "sam3_native",
+    "target_id_selection": "fixed native SAM3 obj_id selected on pre-event frames; ID-track baseline uses a GT-box visual initialization",
+    "frame_recall": "same native obj_id IoU>=0.5 matches / visible target GT frames",
+    "recovery_rate": "same native obj_id matches within first 10 visible post-event frames",
+    "track_ap50": "101-point AP50 using the fixed native track prediction against the event target"
+  },
+  "prediction_metadata": {
+    "model_name": "sam3_native_id_tracker",
+    "checkpoint": "/home/alien/.cache/huggingface/hub/models--facebook--sam3/blobs/9999e2341ceef5e136daa386eecb55cb414446a00ac2b55eb2dfd2f7c3cf8c9e",
+    "init_mode": "native_id_refine",
+    "track_id_source": "sam3_native",
+    "events_requested": 24,
+    "events_completed": 24,
+    "detection_threshold": 0.48943960666656494,
+    "new_detection_threshold": 0.7,
+    "max_objects": 10,
+    "input_max_side": 1008
+  },
+  "events_expected": 24,
+  "events_evaluated": 24,
+  "missing_events": [],
+  "overall": {
+    "events": 24,
+    "frame_recall": 0.7872648335745297,
+    "recovery_rate": 0.7777777777777778,
+    "redetection_rate_any_id": 0.8333333333333334,
+    "track_ap50": 0.7821782178217822,
+    "visible_gt_frames": 691,
+    "matched_frames": 544,
+    "recovery_eligible_events": 18,
+    "phase_frame_recall": {
+      "pre": {
+        "matches": 249,
+        "gt_frames": 324,
+        "frame_recall": 0.7685185185185185
+      },
+      "low_reliability": {
+        "matches": 123,
+        "gt_frames": 157,
+        "frame_recall": 0.7834394904458599
+      },
+      "post": {
+        "matches": 172,
+        "gt_frames": 210,
+        "frame_recall": 0.819047619047619
+      }
+    },
+    "median_event_frame_recall": 0.98
+  },
+  "by_condition": {
+    "camera_motion_or_blur": {
+      "events": 24,
+      "frame_recall": 0.7872648335745297,
+      "recovery_rate": 0.7777777777777778,
+      "redetection_rate_any_id": 0.8333333333333334,
+      "track_ap50": 0.7821782178217822,
+      "visible_gt_frames": 691,
+      "matched_frames": 544,
+      "recovery_eligible_events": 18,
+      "phase_frame_recall": {
+        "pre": {
+          "matches": 249,
+          "gt_frames": 324,
+          "frame_recall": 0.7685185185185185
+        },
+        "low_reliability": {
+          "matches": 123,
+          "gt_frames": 157,
+          "frame_recall": 0.7834394904458599
+        },
+        "post": {
+          "matches": 172,
+          "gt_frames": 210,
+          "frame_recall": 0.819047619047619
+        }
+      },
+      "median_event_frame_recall": 0.98
+    }
+  },
+  "event_results": [
+    {
+      "event_id": "camera_search-001",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 3,
+      "visible_gt_frames": 36,
+      "matched_frames": 6,
+      "frame_recall": 0.16666666666666666,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          0,
+          15
+        ],
+        "low_reliability": [
+          0,
+          6
+        ],
+        "post": [
+          6,
+          15
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-002",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 3,
+      "visible_gt_frames": 19,
+      "matched_frames": 16,
+      "frame_recall": 0.8421052631578947,
+      "recovery_eligible": false,
+      "same_id_recovered": false,
+      "any_id_recovered": false,
+      "labelled": [
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          13,
+          15
+        ],
+        "low_reliability": [
+          3,
+          4
+        ],
+        "post": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-003",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 4,
+      "visible_gt_frames": 19,
+      "matched_frames": 19,
+      "frame_recall": 1.0,
+      "recovery_eligible": false,
+      "same_id_recovered": false,
+      "any_id_recovered": false,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          4,
+          4
+        ],
+        "post": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-004",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 0,
+      "visible_gt_frames": 16,
+      "matched_frames": 0,
+      "frame_recall": 0.0,
+      "recovery_eligible": true,
+      "same_id_recovered": false,
+      "any_id_recovered": false,
+      "labelled": [
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          0,
+          5
+        ],
+        "low_reliability": [
+          0,
+          6
+        ],
+        "post": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-005",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 0,
+      "visible_gt_frames": 34,
+      "matched_frames": 34,
+      "frame_recall": 1.0,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          4,
+          4
+        ],
+        "post": [
+          15,
+          15
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-006",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 0,
+      "visible_gt_frames": 15,
+      "matched_frames": 12,
+      "frame_recall": 0.8,
+      "recovery_eligible": false,
+      "same_id_recovered": false,
+      "any_id_recovered": false,
+      "labelled": [
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          8,
+          11
+        ],
+        "low_reliability": [
+          4,
+          4
+        ],
+        "post": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-007",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 0,
+      "visible_gt_frames": 25,
+      "matched_frames": 24,
+      "frame_recall": 0.96,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          14,
+          15
+        ],
+        "low_reliability": [
+          4,
+          4
+        ],
+        "post": [
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-008",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 1,
+      "visible_gt_frames": 39,
+      "matched_frames": 39,
+      "frame_recall": 1.0,
+      "recovery_eligible": false,
+      "same_id_recovered": false,
+      "any_id_recovered": false,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          24,
+          24
+        ],
+        "post": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-009",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 6,
+      "visible_gt_frames": 16,
+      "matched_frames": 11,
+      "frame_recall": 0.6875,
+      "recovery_eligible": false,
+      "same_id_recovered": false,
+      "any_id_recovered": false,
+      "labelled": [
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          7,
+          12
+        ],
+        "low_reliability": [
+          4,
+          4
+        ],
+        "post": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-010",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 0,
+      "visible_gt_frames": 23,
+      "matched_frames": 23,
+      "frame_recall": 1.0,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          2,
+          2
+        ],
+        "post": [
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-011",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 1,
+      "visible_gt_frames": 35,
+      "matched_frames": 35,
+      "frame_recall": 1.0,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          5,
+          5
+        ],
+        "post": [
+          15,
+          15
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-012",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 0,
+      "visible_gt_frames": 23,
+      "matched_frames": 1,
+      "frame_recall": 0.043478260869565216,
+      "recovery_eligible": false,
+      "same_id_recovered": false,
+      "any_id_recovered": false,
+      "labelled": [
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          0,
+          15
+        ],
+        "low_reliability": [
+          1,
+          8
+        ],
+        "post": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-013",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 0,
+      "visible_gt_frames": 33,
+      "matched_frames": 29,
+      "frame_recall": 0.8787878787878788,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          5,
+          5
+        ],
+        "post": [
+          9,
+          13
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-014",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 0,
+      "visible_gt_frames": 30,
+      "matched_frames": 30,
+      "frame_recall": 1.0,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          2,
+          2
+        ],
+        "post": [
+          13,
+          13
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-015",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 1,
+      "visible_gt_frames": 33,
+      "matched_frames": 33,
+      "frame_recall": 1.0,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          6,
+          6
+        ],
+        "post": [
+          12,
+          12
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-016",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 0,
+      "visible_gt_frames": 20,
+      "matched_frames": 0,
+      "frame_recall": 0.0,
+      "recovery_eligible": true,
+      "same_id_recovered": false,
+      "any_id_recovered": false,
+      "labelled": [
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          0,
+          11
+        ],
+        "low_reliability": [
+          0,
+          5
+        ],
+        "post": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-017",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 0,
+      "visible_gt_frames": 48,
+      "matched_frames": 45,
+      "frame_recall": 0.9375,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          12,
+          15
+        ],
+        "low_reliability": [
+          18,
+          18
+        ],
+        "post": [
+          15,
+          15
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-018",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": null,
+      "visible_gt_frames": 4,
+      "matched_frames": 0,
+      "frame_recall": 0.0,
+      "recovery_eligible": true,
+      "same_id_recovered": false,
+      "any_id_recovered": true,
+      "labelled": [],
+      "phase_counts": {
+        "pre": [
+          0,
+          0
+        ],
+        "low_reliability": [
+          0,
+          3
+        ],
+        "post": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-019",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 4,
+      "visible_gt_frames": 54,
+      "matched_frames": 54,
+      "frame_recall": 1.0,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          24,
+          24
+        ],
+        "post": [
+          15,
+          15
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-020",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 1,
+      "visible_gt_frames": 36,
+      "matched_frames": 0,
+      "frame_recall": 0.0,
+      "recovery_eligible": true,
+      "same_id_recovered": false,
+      "any_id_recovered": false,
+      "labelled": [
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          0,
+          15
+        ],
+        "low_reliability": [
+          0,
+          6
+        ],
+        "post": [
+          0,
+          15
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-021",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 2,
+      "visible_gt_frames": 32,
+      "matched_frames": 32,
+      "frame_recall": 1.0,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          2,
+          2
+        ],
+        "post": [
+          15,
+          15
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-022",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 0,
+      "visible_gt_frames": 33,
+      "matched_frames": 33,
+      "frame_recall": 1.0,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          3,
+          3
+        ],
+        "post": [
+          15,
+          15
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-023",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 0,
+      "visible_gt_frames": 33,
+      "matched_frames": 33,
+      "frame_recall": 1.0,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          3,
+          3
+        ],
+        "post": [
+          15,
+          15
+        ]
+      }
+    },
+    {
+      "event_id": "camera_search-024",
+      "condition": "camera_motion_or_blur",
+      "selected_sam3_obj_id": 3,
+      "visible_gt_frames": 35,
+      "matched_frames": 35,
+      "frame_recall": 1.0,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ],
+        [
+          1.0,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          5,
+          5
+        ],
+        "post": [
+          15,
+          15
+        ]
+      }
+    }
+  ]
+}

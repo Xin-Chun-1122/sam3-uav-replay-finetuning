@@ -1,0 +1,21 @@
+{
+  "test_images": 1610,
+  "with_replay_minus_original": {
+    "Tiny F1": 0.0006537231852321024,
+    "Tiny Recall": 0.017356065412718225,
+    "Small F1": -0.02269929462165632,
+    "Small Recall": 0.013996699468247664,
+    "Regular F1": -0.02725806662744107,
+    "Regular Recall": 0.01466441060349688,
+    "AP50": -0.0037288701533234603,
+    "FP/image": 1.5354037267080756
+  },
+  "main_ap50_definition": "macro 101-point AP at IoU 0.50 over six target categories",
+  "supplementary_micro_ap50": {
+    "YOLO": 0.28957530061932346,
+    "YOLO-World": 0.35260817356229796,
+    "Original SAM 3": 0.5917585538563859,
+    "Adapted SAM 3 without replay": 0.0236805722156451,
+    "Adapted SAM 3 with replay": 0.5957995557109189
+  }
+}

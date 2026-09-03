@@ -1,0 +1,5 @@
+# Large model weights are tracked by source URL and SHA-256, not by Git.
+*.pt
+*.pth
+*.ckpt
+

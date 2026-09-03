@@ -1,0 +1,46 @@
+[
+  {
+    "query_id": "white-bus-green-distractor-0145-1",
+    "example_id": "white-bus-green-distractor-0145-1",
+    "file_name": "9999938_00000_d_0000145.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The white bus turning left near the bottom-right of the image.",
+    "layers": [{"layer": 3, "prompt": "the white bus turning left near the bottom-right of the image", "gt_boxes_xyxy": [[1109.0, 351.0, 1203.0, 506.0]], "gt_source": "RefDrone test annotation", "prompt_form": "short noun phrase"}]
+  },
+  {
+    "query_id": "white-bus-green-distractor-0145-2",
+    "example_id": "white-bus-green-distractor-0145-2",
+    "file_name": "9999938_00000_d_0000145.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The large white bus turning left on the right side of the image.",
+    "layers": [{"layer": 3, "prompt": "the large white bus turning left on the right side of the image", "gt_boxes_xyxy": [[1109.0, 351.0, 1203.0, 506.0]], "gt_source": "RefDrone test annotation", "prompt_form": "short noun phrase"}]
+  },
+  {
+    "query_id": "white-bus-green-distractor-0145-3",
+    "example_id": "white-bus-green-distractor-0145-3",
+    "file_name": "9999938_00000_d_0000145.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The single large white bus below the green bus on the right.",
+    "layers": [{"layer": 3, "prompt": "the single large white bus below the green bus on the right", "gt_boxes_xyxy": [[1109.0, 351.0, 1203.0, 506.0]], "gt_source": "RefDrone test annotation", "prompt_form": "short noun phrase"}]
+  },
+  {
+    "query_id": "white-bus-green-distractor-0145-4",
+    "example_id": "white-bus-green-distractor-0145-4",
+    "file_name": "9999938_00000_d_0000145.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The white bus closest to the bottom-right corner.",
+    "layers": [{"layer": 3, "prompt": "the white bus closest to the bottom-right corner", "gt_boxes_xyxy": [[1109.0, 351.0, 1203.0, 506.0]], "gt_source": "RefDrone test annotation", "prompt_form": "short noun phrase"}]
+  }
+]

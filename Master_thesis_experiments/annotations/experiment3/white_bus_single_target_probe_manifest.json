@@ -1,0 +1,90 @@
+[
+  {
+    "query_id": "white-bus-single-1",
+    "example_id": "white-bus-single-1",
+    "file_name": "9999938_00000_d_0000038.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The right-hand white bus in the adjacent pair at the bottom center.",
+    "layers": [{"layer": 3, "prompt": "the right-hand white bus in the adjacent pair at the bottom center", "gt_boxes_xyxy": [[792.0, 646.0, 879.0, 785.0]], "gt_source": "VisDrone exhaustive bus GT with manually verified color and spatial relation", "prompt_form": "short noun phrase"}]
+  },
+  {
+    "query_id": "white-bus-single-2",
+    "example_id": "white-bus-single-2",
+    "file_name": "9999938_00000_d_0000038.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The narrow white bus immediately right of the large white bus at the bottom.",
+    "layers": [{"layer": 3, "prompt": "the narrow white bus immediately right of the large white bus at the bottom", "gt_boxes_xyxy": [[792.0, 646.0, 879.0, 785.0]], "gt_source": "VisDrone exhaustive bus GT with manually verified color and spatial relation", "prompt_form": "short noun phrase"}]
+  },
+  {
+    "query_id": "white-bus-single-3",
+    "example_id": "white-bus-single-3",
+    "file_name": "9999938_00000_d_0000038.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The rightmost vertical white bus in the bottom-center pair.",
+    "layers": [{"layer": 3, "prompt": "the rightmost vertical white bus in the bottom-center pair", "gt_boxes_xyxy": [[792.0, 646.0, 879.0, 785.0]], "gt_source": "VisDrone exhaustive bus GT with manually verified color and spatial relation", "prompt_form": "short noun phrase"}]
+  },
+  {
+    "query_id": "white-bus-single-4",
+    "example_id": "white-bus-single-4",
+    "file_name": "9999938_00000_d_0000038.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The white bus at the bottom center directly beside the other white bus on its left.",
+    "layers": [{"layer": 3, "prompt": "the white bus at the bottom center directly beside the other white bus on its left", "gt_boxes_xyxy": [[792.0, 646.0, 879.0, 785.0]], "gt_source": "VisDrone exhaustive bus GT with manually verified color and spatial relation", "prompt_form": "short noun phrase"}]
+  },
+  {
+    "query_id": "white-bus-single-5",
+    "example_id": "white-bus-single-5",
+    "file_name": "9999938_00000_d_0000038.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The single narrow white coach to the right of the broad white coach at the bottom.",
+    "layers": [{"layer": 3, "prompt": "the single narrow white coach to the right of the broad white coach at the bottom", "gt_boxes_xyxy": [[792.0, 646.0, 879.0, 785.0]], "gt_source": "VisDrone exhaustive bus GT with manually verified color and spatial relation", "prompt_form": "short noun phrase"}]
+  },
+  {
+    "query_id": "white-bus-single-6",
+    "example_id": "white-bus-single-6",
+    "file_name": "9999938_00000_d_0000038.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The eastern white bus of the two adjacent buses along the bottom edge.",
+    "layers": [{"layer": 3, "prompt": "the eastern white bus of the two adjacent buses along the bottom edge", "gt_boxes_xyxy": [[792.0, 646.0, 879.0, 785.0]], "gt_source": "VisDrone exhaustive bus GT with manually verified color and spatial relation", "prompt_form": "short noun phrase"}]
+  },
+  {
+    "query_id": "white-bus-single-7",
+    "example_id": "white-bus-single-7",
+    "file_name": "9999938_00000_d_0000038.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The white bus on the right side of the paired white buses near the lower border.",
+    "layers": [{"layer": 3, "prompt": "the white bus on the right side of the paired white buses near the lower border", "gt_boxes_xyxy": [[792.0, 646.0, 879.0, 785.0]], "gt_source": "VisDrone exhaustive bus GT with manually verified color and spatial relation", "prompt_form": "short noun phrase"}]
+  },
+  {
+    "query_id": "white-bus-single-8",
+    "example_id": "white-bus-single-8",
+    "file_name": "9999938_00000_d_0000038.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "Only the slim white bus to the right of the neighboring wide white bus at the bottom.",
+    "layers": [{"layer": 3, "prompt": "only the slim white bus to the right of the neighboring wide white bus at the bottom", "gt_boxes_xyxy": [[792.0, 646.0, 879.0, 785.0]], "gt_source": "VisDrone exhaustive bus GT with manually verified color and spatial relation", "prompt_form": "short noun phrase"}]
+  }
+]

@@ -1,0 +1,38 @@
+# Visual Genome Dataset Config
+# Purpose: Relationship reasoning and complex scene understanding
+
+name: visual_genome
+version: "1.0"
+
+splits:
+  train:
+    img_dir: /work/nthujerry123/sam3/datasets/visual_genome/images
+    scene_graphs: /home/nthujerry123/datasets/visual_genome/scene_graphs.json
+    region_descriptions: /home/nthujerry123/datasets/visual_genome/region_descriptions.json
+    weight: 1.0
+  val:
+    img_dir: /work/nthujerry123/sam3/datasets/visual_genome/images
+    scene_graphs: /home/nthujerry123/datasets/visual_genome/scene_graphs_val.json
+    region_descriptions: /home/nthujerry123/datasets/visual_genome/region_descriptions_val.json
+
+# Filtering settings (VG has noisy data)
+filtering:
+  min_box_area: 400           # Filter tiny boxes
+  min_description_words: 3   # Filter too-short descriptions
+  max_regions_per_image: 30  # Cap to avoid memory issues
+  blacklist_categories:       # Remove non-object regions
+    - "sky"
+    - "ground"
+    - "wall"
+    - "background"
+
+# Relationship types to keep (for UAV-relevant reasoning)
+relationship_types:
+  - "near"
+  - "next to"
+  - "on top of"
+  - "above"
+  - "below"
+  - "behind"
+  - "in front of"
+  - "beside"

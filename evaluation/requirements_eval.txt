@@ -1,0 +1,12 @@
+# Evaluation system requirements
+# These are already satisfied in the sam3_env conda environment.
+pycocotools
+supervision>=0.28.0
+tqdm
+scipy
+matplotlib
+pandas
+opencv-python
+pillow
+iopath
+pytest

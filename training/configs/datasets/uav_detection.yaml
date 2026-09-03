@@ -1,0 +1,78 @@
+# UAV Multi-Class Detection Dataset Config
+# Classes: car, person, fire, smoke
+# Data sources: FASDD_UAV + VisDrone + custom fire/smoke
+
+name: uav_detection
+version: "2.0"
+
+categories:
+  - id: 0
+    name: fire
+    supercategory: hazard
+  - id: 1
+    name: smoke
+    supercategory: hazard
+  - id: 2
+    name: car
+    supercategory: vehicle
+  - id: 3
+    name: person
+    supercategory: human
+
+# Text prompts for open-vocabulary training
+category_prompts:
+  fire:
+    - "fire"
+    - "flame"
+    - "burning fire"
+    - "fire on the ground"
+    - "wildfire"
+  smoke:
+    - "smoke"
+    - "dark smoke"
+    - "smoke plume"
+    - "haze from fire"
+    - "transparent smoke"
+    - "cloud-like smoke"
+  car:
+    - "car"
+    - "vehicle"
+    - "automobile"
+    - "parked car"
+    - "moving vehicle"
+    - "car from aerial view"
+  person:
+    - "person"
+    - "human"
+    - "pedestrian"
+    - "person from above"
+    - "people walking"
+    - "human from UAV"
+
+# Dataset splits
+splits:
+  train:
+    fasdd_uav:
+      ann_file: /work/nthujerry123/sam3/datasets/merged/annotations/train.json
+      img_dir: /work/nthujerry123/sam3/datasets/merged/images
+      weight: 0.6
+    visdrone:
+      ann_file: /work/nthujerry123/sam3/datasets/visdrone/annotations/train_coco.json
+      img_dir: /work/nthujerry123/sam3/datasets/visdrone/images/train
+      weight: 0.4
+  val:
+    fasdd_uav:
+      ann_file: /work/nthujerry123/sam3/datasets/merged/annotations/val.json
+      img_dir: /work/nthujerry123/sam3/datasets/merged/images
+    visdrone:
+      ann_file: /work/nthujerry123/sam3/datasets/visdrone/annotations/val_coco.json
+      img_dir: /work/nthujerry123/sam3/datasets/visdrone/images/val
+
+# Augmentation settings for UAV imagery
+augmentation:
+  random_flip: true
+  random_rotate: true          # UAV often sees rotated scenes
+  rotate_range: [-30, 30]
+  scale_jitter: [0.5, 2.0]    # Multi-scale for small objects
+  color_jitter: true
+  mosaic: false                # Disable mosaic to preserve spatial relationships

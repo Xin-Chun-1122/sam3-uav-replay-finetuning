@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VisDrone-MOT thesis tracking events",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["event_id", "condition", "sequence_id", "target_id", "start_frame", "end_frame", "source_type"],
+    "properties": {
+      "event_id": {"type": "string"},
+      "condition": {"enum": ["partial_occlusion", "temporary_complete_disappearance", "scale_decrease_and_recovery", "camera_motion_or_blur"]},
+      "sequence_id": {"type": "string"},
+      "target_id": {"type": ["string", "integer"]},
+      "clip_start_frame": {"type": "integer", "minimum": 0},
+      "clip_end_frame": {"type": "integer", "minimum": 0},
+      "start_frame": {"type": "integer", "minimum": 0},
+      "end_frame": {"type": "integer", "minimum": 0},
+      "source_type": {"enum": ["natural", "synthetic_cloud"]},
+      "notes": {"type": "string"}
+    }
+  }
+}
+

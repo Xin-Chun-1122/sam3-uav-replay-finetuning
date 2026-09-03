@@ -1,0 +1,4 @@
+scale,definition,images_containing_scale,evaluated_gt_instances
+tiny,s < 32,1496,48859
+small,32 <= s < 64,1523,16361
+regular,s >= 64,1164,7092

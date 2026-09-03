@@ -1,0 +1,40 @@
+{
+  "locked_on": "2026-07-21",
+  "checkpoint_selection_split": "/home/alien/Documents/master1/VisDrone-val",
+  "checkpoint_screening": {
+    "image_count": 120,
+    "selection": "SHA-256 order of seed:image_name",
+    "seed": 42,
+    "primary_selection_metric": "micro AP50, with overall F1 and scale recall as supporting metrics"
+  },
+  "selected_models": {
+    "sam3_original": "/home/alien/.cache/huggingface/hub/models--facebook--sam3/snapshots/3c879f39826c281e95690f02c7821c4de09afae7/sam3.pt",
+    "sam3_adapted_no_replay": "/home/alien/sam3/Master_thesis_experiments/models/sam3_fasdd_no_replay_merged.pt",
+    "sam3_adapted_with_replay": "/home/alien/sam3/finetune_sam3/checkpoint_25_merged.pt"
+  },
+  "screening_operating_thresholds": {
+    "sam3_original": 0.4877443015575409,
+    "sam3_adapted_no_replay": 6.4137433142263944e-09,
+    "sam3_adapted_with_replay": 0.4825560450553894
+  },
+  "final_validation_operating_thresholds": {
+    "yolo": 0.06027992069721222,
+    "yolo_world": 0.052561935037374496,
+    "sam3_original": 0.48943960666656494,
+    "sam3_adapted_no_replay": 2.187017789090362e-10,
+    "sam3_adapted_with_replay": 0.4773983955383301
+  },
+  "final_threshold_policy": "One threshold per selected baseline was optimized for micro F1 on the complete 548-image validation split and is now frozen for test-dev. AP50 remains threshold-free.",
+  "test_split_must_not_be_used_for": [
+    "checkpoint selection",
+    "confidence-threshold selection",
+    "prompt wording selection"
+  ],
+  "evaluation": {
+    "iou_threshold": 0.5,
+    "max_detections_per_image": 500,
+    "ignored_region_rule": "Drop GT and detections with at least 50% box area covered by the union of VisDrone category-0 ignored regions; retain score-0 target GT as ignored matches.",
+    "ap50": "101-point interpolated, both macro across six categories and micro across all target instances",
+    "fp_per_image_denominator_test": 1610
+  }
+}

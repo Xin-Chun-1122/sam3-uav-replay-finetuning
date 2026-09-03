@@ -1,0 +1,47 @@
+{
+  "audit_date": "2026-07-21",
+  "classification": "with replay; frozen-backbone training",
+  "classification_evidence": {
+    "training_run": "stage2_pure_frozen_official",
+    "dataset_config": "stage2C_ultimate_mix",
+    "documented_components": [
+      "VisDrone",
+      "FASDD",
+      "COCO / RefCOCO language replay"
+    ],
+    "interpretation": "pure_frozen refers to frozen model parameters, not absence of replay data"
+  },
+  "files": {
+    "raw_training_checkpoint": {
+      "path": "/home/alien/sam3/finetune_sam3/best0623/checkpoint_25.pt",
+      "sha256": "402844159f1e75d97ea7147d91ce0810f7b1553056695239627d7de17faec657",
+      "epoch": 25,
+      "model_tensor_count": 1106
+    },
+    "detector_only_conversion": {
+      "path": "/home/alien/sam3/finetune_sam3/best0623/checkpoint_25_converted.pt",
+      "sha256": "c4d6f25fc87df88cbb9854ab1f549ec563734a7344d37d960839cb39cc7f1f5e",
+      "tensor_count": 1106,
+      "detector_tensor_count": 1106,
+      "tracker_tensor_count": 0,
+      "accepted_for_tracking": false
+    },
+    "merged_inference_checkpoint": {
+      "path": "/home/alien/sam3/finetune_sam3/checkpoint_25_merged.pt",
+      "sha256": "3df0a0fb946a2522b82d810ee1dff8298b24814ed70c98c677848cef84d54cab",
+      "tensor_count": 1465,
+      "detector_tensor_count": 1156,
+      "tracker_tensor_count": 309,
+      "accepted_for_tracking": true
+    }
+  },
+  "smoke_test": {
+    "status": "pass",
+    "device": "NVIDIA GeForce RTX 4060 Ti",
+    "prompt": "car",
+    "confidence": 0.3,
+    "prediction_count": 20,
+    "peak_gpu_memory_mib": 6623
+  },
+  "experiment_role": "additional adapted SAM 3 with-replay candidate; not the without-replay baseline"
+}

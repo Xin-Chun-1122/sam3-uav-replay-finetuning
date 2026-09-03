@@ -1,0 +1,115 @@
+# Fire & Smoke Complex Prompt Templates
+# For testing SAM3-I's fire/smoke reasoning capabilities
+
+version: "1.0"
+
+# ── Simple Detection Prompts ──────────────────────────────────
+simple:
+  - id: fs_01
+    prompt: "fire"
+    expected_classes: [fire]
+    difficulty: easy
+
+  - id: fs_02
+    prompt: "smoke"
+    expected_classes: [smoke]
+    difficulty: easy
+
+  - id: fs_03
+    prompt: "burning fire on the ground"
+    expected_classes: [fire]
+    difficulty: easy
+
+  - id: fs_04
+    prompt: "transparent smoke partially blocking the view"
+    expected_classes: [smoke]
+    difficulty: medium
+
+  - id: fs_05
+    prompt: "dark smoke plume rising from the ground"
+    expected_classes: [smoke]
+    difficulty: medium
+
+# ── Spatial Relationship Prompts ─────────────────────────────
+spatial:
+  - id: fs_10
+    prompt: "fire near any vehicle"
+    expected_classes: [fire, car]
+    intent: find_near
+    difficulty: hard
+
+  - id: fs_11
+    prompt: "smoke beside a car"
+    expected_classes: [smoke, car]
+    intent: find_near
+    difficulty: hard
+
+  - id: fs_12
+    prompt: "find vehicles, then check if there is smoke near any detected vehicle"
+    expected_classes: [car, smoke]
+    intent: find_near
+    difficulty: hard
+    description: "Two-stage: first find cars, then find smoke near each car"
+
+  - id: fs_13
+    prompt: "person near fire"
+    expected_classes: [person, fire]
+    intent: find_near
+    difficulty: hard
+    description: "Safety-critical: people in danger zones"
+
+# ── Temporal / Comparative Prompts ───────────────────────────
+temporal:
+  - id: fs_20
+    prompt: "new fire that was not in the previous frame"
+    expected_classes: [fire]
+    intent: detect_new
+    difficulty: hard
+    description: "Detect newly appeared fire"
+
+  - id: fs_21
+    prompt: "compare with previous image and report new smoke or fire"
+    expected_classes: [fire, smoke]
+    intent: detect_new
+    difficulty: hard
+
+  - id: fs_22
+    prompt: "smoke that appeared in the last 5 seconds"
+    expected_classes: [smoke]
+    intent: detect_new
+    difficulty: hard
+
+# ── No-Duplicate Tracking Prompts ────────────────────────────
+tracking:
+  - id: fs_30
+    prompt: "track all fires and avoid duplicate reports of the same fire"
+    expected_classes: [fire]
+    intent: no_duplicate
+    difficulty: hard
+
+  - id: fs_31
+    prompt: "unique smoke sources without counting the same smoke twice"
+    expected_classes: [smoke]
+    intent: no_duplicate
+    difficulty: hard
+
+  - id: fs_32
+    prompt: "report each new fire only once across the entire video"
+    expected_classes: [fire]
+    intent: no_duplicate
+    difficulty: hard
+
+# ── Conditional Logic Prompts ─────────────────────────────────
+conditional:
+  - id: fs_40
+    prompt: "if smoke is detected, find the likely fire source nearby"
+    expected_classes: [smoke, fire]
+    intent: find_near
+    difficulty: expert
+    description: "Conditional chaining: smoke -> then find fire"
+
+  - id: fs_41
+    prompt: "only report fire if smoke is also present in the scene"
+    expected_classes: [fire, smoke]
+    intent: conditional
+    difficulty: expert

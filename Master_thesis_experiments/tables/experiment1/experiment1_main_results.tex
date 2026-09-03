@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{Object-scale detection results on the VisDrone-DET test-dev set.}
+\label{tab:experiment1_scale}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+Model & Tiny F1 & Tiny R & Small F1 & Small R & Regular F1 & Regular R & AP50 & FP/image \\
+\midrule
+YOLO & 0.2630 & 0.2232 & 0.3476 & 0.5056 & 0.2486 & 0.5955 & 0.1965 & 14.7323 \\
+YOLO-World & 0.2930 & 0.2652 & 0.3880 & 0.6301 & 0.2690 & 0.7300 & 0.2724 & 16.8950 \\
+Original SAM 3 & 0.4993 & 0.4434 & \textbf{0.5881} & 0.8298 & \textbf{0.4308} & 0.9016 & \textbf{0.5943} & \textbf{10.1553} \\
+Adapted SAM 3 w/o replay & 0.0167 & 0.0634 & 0.0223 & 0.2368 & 0.0076 & 0.1729 & 0.0118 & 210.7248 \\
+Adapted SAM 3 w/ replay & \textbf{0.4999} & \textbf{0.4608} & 0.5654 & \textbf{0.8438} & 0.4036 & \textbf{0.9162} & 0.5906 & 11.6907 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

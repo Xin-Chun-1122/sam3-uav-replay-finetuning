@@ -1,0 +1,113 @@
+{
+  "generated_on": "2026-07-21",
+  "hash_algorithm": "sha256",
+  "resources": [
+    {
+      "name": "VisDrone2019-MOT-test-dev archive",
+      "source": "https://github.com/VisDrone/VisDrone-Dataset",
+      "local_path": "datasets/raw/VisDrone2019-MOT-test-dev.zip",
+      "bytes": 2293482321,
+      "sha256": "758abe40bf20246e7e778ac61eaa557cf004b034b6e68e85006e5add68e17eb5"
+    },
+    {
+      "name": "RefDrone test MDETR annotations",
+      "source": "https://huggingface.co/datasets/sunzc-sunny/RefDrone",
+      "local_path": "datasets/raw/RefDrone/RefDrone_test_mdetr.json",
+      "bytes": 3287485,
+      "sha256": "b670d85d6b3c44120deaec4e66f481b1a63d2f638411542e865512b57626d4cc"
+    },
+    {
+      "name": "RefDrone test images TSV",
+      "source": "https://huggingface.co/datasets/sunzc-sunny/RefDrone",
+      "local_path": "datasets/raw/RefDrone/refdrone_test_base64.tsv",
+      "bytes": 884067043,
+      "sha256": "6f45ca2e26cab2bb2c0f2f4963fb656af9ad0a26a616f04afa92b15ed970a20c"
+    },
+    {
+      "name": "RefDrone test captions",
+      "source": "https://huggingface.co/datasets/sunzc-sunny/RefDrone",
+      "local_path": "datasets/raw/RefDrone/test_caption.zip",
+      "bytes": 885270,
+      "sha256": "10ed307d92c9c126577d54a27f6a727955417d20aebea8891eb61d4d0314dce6"
+    },
+    {
+      "name": "YOLOv8x-WorldV2",
+      "source": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8x-worldv2.pt",
+      "local_path": "models/yolov8x-worldv2.pt",
+      "bytes": 146355704,
+      "sha256": "41e771bfbbb8894dd857f3fef7cac3b3578dffd49fd3547101efa6a606a02a0e"
+    },
+    {
+      "name": "YOLOv8x",
+      "local_path": "/home/alien/sam3/yolov8x.pt",
+      "bytes": 136890692,
+      "sha256": "3df4ada6b4dad6d657868f2fdf7faecfb34dcfccf3a25c4b82079064718524c8"
+    },
+    {
+      "name": "Original SAM 3",
+      "local_path": "/home/alien/.cache/huggingface/hub/models--facebook--sam3/snapshots/3c879f39826c281e95690f02c7821c4de09afae7/sam3.pt",
+      "bytes": 3450062241,
+      "sha256": "9999e2341ceef5e136daa386eecb55cb414446a00ac2b55eb2dfd2f7c3cf8c9e"
+    },
+    {
+      "name": "Adapted SAM 3 frozen Stage-2B with replay",
+      "local_path": "/home/alien/sam3/finetune_sam3/final_best/sam3_frozen_best.pt",
+      "bytes": 3450174228,
+      "sha256": "f8cfe5c212436e8580a2ed93eaf195e8a56e2da201e89fcee08a1ff3def0b5a0"
+    },
+    {
+      "name": "Adapted SAM 3 unfrozen Stage-2B raw training checkpoint with replay",
+      "local_path": "/home/alien/sam3/finetune_sam3/all_model/best_sam3_stage2B.pt",
+      "bytes": 10009567404,
+      "sha256": "b4b5f000f3ff3212af1932b7f9d83a4c3bac82a424c6b98428b6e76e85be4435"
+    },
+    {
+      "name": "Adapted SAM 3 unfrozen Stage-2B merged inference checkpoint with replay",
+      "local_path": "models/sam3_stage2b_unfrozen_merged.pt",
+      "bytes": 3450190473,
+      "sha256": "741c763e951197028835bd0c7e6a5aebf0a2d0383074801473147b0220397558"
+    },
+    {
+      "name": "Stage-1 checkpoint epoch 40 (replay status pending provenance)",
+      "local_path": "/home/alien/sam3/finetune_sam3/cloud_fire_model/checkpoint_40.pt",
+      "bytes": 10009567404,
+      "sha256": "74e55c9b52205e84b1fb233c0f14f494cd5c6cd3894ab65bf858202a61b6e4e7"
+    },
+    {
+      "name": "FASDD UAV checkpoint epoch 40 (replay status pending provenance)",
+      "local_path": "/home/alien/sam3/finetune_sam3/FASDD_UAV_model/checkpoint.pt",
+      "bytes": 10009567404,
+      "sha256": "c530dcd6f058195a18c3c7ac6af4ffc494254737f57718520aca576e17f0b7b6"
+    },
+    {
+      "name": "best0623 epoch 25 raw training checkpoint with replay",
+      "local_path": "/home/alien/sam3/finetune_sam3/best0623/checkpoint_25.pt",
+      "bytes": 3606631410,
+      "sha256": "402844159f1e75d97ea7147d91ce0810f7b1553056695239627d7de17faec657"
+    },
+    {
+      "name": "best0623 epoch 25 incomplete detector-only conversion with replay",
+      "local_path": "/home/alien/sam3/finetune_sam3/best0623/checkpoint_25_converted.pt",
+      "bytes": 3362677445,
+      "sha256": "c4d6f25fc87df88cbb9854ab1f549ec563734a7344d37d960839cb39cc7f1f5e"
+    },
+    {
+      "name": "best0623 epoch 25 merged inference checkpoint with replay",
+      "local_path": "/home/alien/sam3/finetune_sam3/checkpoint_25_merged.pt",
+      "bytes": 3450178641,
+      "sha256": "3df0a0fb946a2522b82d810ee1dff8298b24814ed70c98c677848cef84d54cab"
+    },
+    {
+      "name": "FASDD-only epoch 40 merged inference checkpoint without replay",
+      "local_path": "models/sam3_fasdd_no_replay_merged.pt",
+      "bytes": 3450189002,
+      "sha256": "561613394b4e93c444f745c019abb4716f4528637c0480a23de1be46b9bd9e1e"
+    },
+    {
+      "name": "Official VisDrone2018-DET evaluation toolkit",
+      "source": "https://github.com/VisDrone/VisDrone2018-DET-toolkit",
+      "local_path": "tools/VisDrone2018-DET-toolkit",
+      "git_commit": "005445782213e20cb91bc50a597db3dd949e749a"
+    }
+  ]
+}

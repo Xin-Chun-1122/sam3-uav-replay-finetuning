@@ -1,0 +1,2 @@
+dataset,both_success,improved_by_finetuning,both_failed,finetuning_regression,net_improvement,improvement_rate,total_compared
+visdrone,0,0,1595,15,-15,0.0,1610

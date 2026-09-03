@@ -1,0 +1,120 @@
+{
+  "dataset_root": "/home/alien/sam3/Master_thesis_experiments/datasets/raw/VisDrone2019-MOT-test-dev",
+  "seed": 42,
+  "sequence_sizes": {
+    "uav0000009_03358_v": {
+      "frames": 219,
+      "target_annotations": 12531
+    },
+    "uav0000073_00600_v": {
+      "frames": 328,
+      "target_annotations": 14141
+    },
+    "uav0000073_04464_v": {
+      "frames": 312,
+      "target_annotations": 34270
+    },
+    "uav0000077_00720_v": {
+      "frames": 780,
+      "target_annotations": 18703
+    },
+    "uav0000088_00290_v": {
+      "frames": 296,
+      "target_annotations": 21698
+    },
+    "uav0000119_02301_v": {
+      "frames": 179,
+      "target_annotations": 5915
+    },
+    "uav0000120_04775_v": {
+      "frames": 1000,
+      "target_annotations": 40902
+    },
+    "uav0000161_00000_v": {
+      "frames": 308,
+      "target_annotations": 27408
+    },
+    "uav0000188_00000_v": {
+      "frames": 260,
+      "target_annotations": 17479
+    },
+    "uav0000201_00000_v": {
+      "frames": 677,
+      "target_annotations": 18102
+    },
+    "uav0000249_00001_v": {
+      "frames": 360,
+      "target_annotations": 7956
+    },
+    "uav0000249_02688_v": {
+      "frames": 244,
+      "target_annotations": 6649
+    },
+    "uav0000297_00000_v": {
+      "frames": 146,
+      "target_annotations": 8799
+    },
+    "uav0000297_02761_v": {
+      "frames": 373,
+      "target_annotations": 28903
+    },
+    "uav0000306_00230_v": {
+      "frames": 420,
+      "target_annotations": 14576
+    },
+    "uav0000355_00001_v": {
+      "frames": 468,
+      "target_annotations": 12580
+    },
+    "uav0000370_00001_v": {
+      "frames": 265,
+      "target_annotations": 2475
+    }
+  },
+  "conditions": {
+    "partial_occlusion": {
+      "requested": 0,
+      "natural_candidates": 759,
+      "selected_natural": 0,
+      "events": 0,
+      "shortfall_for_synthetic": 0,
+      "sequences": 0,
+      "unique_targets": 0,
+      "median_unique_targets_per_sequence": null,
+      "median_duration_frames": null
+    },
+    "temporary_complete_disappearance": {
+      "requested": 0,
+      "natural_candidates": 106,
+      "selected_natural": 0,
+      "events": 0,
+      "shortfall_for_synthetic": 0,
+      "sequences": 0,
+      "unique_targets": 0,
+      "median_unique_targets_per_sequence": null,
+      "median_duration_frames": null
+    },
+    "scale_decrease_and_recovery": {
+      "requested": 0,
+      "natural_candidates": 188,
+      "selected_natural": 0,
+      "events": 0,
+      "shortfall_for_synthetic": 0,
+      "sequences": 0,
+      "unique_targets": 0,
+      "median_unique_targets_per_sequence": null,
+      "median_duration_frames": null
+    },
+    "camera_motion_or_blur": {
+      "requested": 154,
+      "natural_candidates": 154,
+      "selected_natural": 116,
+      "events": 116,
+      "shortfall_for_synthetic": 38,
+      "sequences": 17,
+      "unique_targets": 91,
+      "median_unique_targets_per_sequence": 108,
+      "median_duration_frames": 5.0
+    }
+  }
+}

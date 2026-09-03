@@ -1,0 +1,2 @@
+dataset,both_success,improved_by_finetuning,both_failed,finetuning_regression,net_improvement,improvement_rate,total_compared
+fasdd,100,113,2096,1872,-1759,0.02702702702702703,4181

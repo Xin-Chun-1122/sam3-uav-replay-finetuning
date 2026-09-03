@@ -1,0 +1,13 @@
+{
+  "dataset": "VisDrone2019-DET",
+  "root": "/home/alien/Downloads/VisDrone2019-DET-test-dev",
+  "total_images": 1610,
+  "images_with_annotations": 1603,
+  "missing_annotation_files": [],
+  "total_annotations": 55456,
+  "per_class_counts": {
+    "person": 27382,
+    "car": 28074
+  },
+  "images_without_target_annotations": 7
+}

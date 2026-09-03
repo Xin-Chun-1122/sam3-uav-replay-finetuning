@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SAM 3 tracking prediction",
+  "type": "object",
+  "required": ["sequence_id", "frame_index", "sam3_obj_id", "track_id_source", "bbox_xyxy", "score"],
+  "properties": {
+    "sequence_id": {"type": "string"},
+    "frame_index": {"type": "integer", "minimum": 0},
+    "sam3_obj_id": {"type": ["string", "integer"]},
+    "global_linked_id": {"type": ["string", "integer", "null"]},
+    "track_id_source": {"const": "sam3_native"},
+    "bbox_xyxy": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number"}},
+    "score": {"type": "number"}
+  }
+}
+

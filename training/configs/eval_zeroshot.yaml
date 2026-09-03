@@ -1,0 +1,12 @@
+# @package _global_
+defaults:
+  - training/stage2B_generalization
+
+trainer:
+  mode: val
+
+paths:
+  stage1_checkpoint: /work/nthujerry123/sam3/checkpoints/sam3.pt
+
+launcher:
+  experiment_log_dir: /work/nthujerry123/sam3/sam3_v2/experiments/zeroshot_eval

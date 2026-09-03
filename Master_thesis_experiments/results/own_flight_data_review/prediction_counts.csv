@@ -1,0 +1,21 @@
+image_name,prompt,prediction_count,operating_threshold
+image (98).png,person,4,0.4773983955
+image (99).png,person,3,0.4773983955
+image (100).png,person,3,0.4773983955
+image (101).png,car,80,0.4773983955
+image (101).png,bus,1,0.4773983955
+image (101).png,person,3,0.4773983955
+image (102).png,car,83,0.4773983955
+image (102).png,bus,1,0.4773983955
+image (102).png,person,3,0.4773983955
+image (103).png,car,18,0.4773983955
+image (103).png,person,1,0.4773983955
+image (104).png,car,18,0.4773983955
+image (104).png,person,0,0.4773983955
+image (105).png,car,24,0.4773983955
+image (105).png,person,1,0.4773983955
+image (106).png,car,107,0.4773983955
+image (106).png,person,5,0.4773983955
+image (107).png,car,8,0.4773983955
+image (107).png,bus,1,0.4773983955
+image (107).png,person,5,0.4773983955

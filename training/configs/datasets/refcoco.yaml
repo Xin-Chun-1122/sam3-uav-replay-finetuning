@@ -1,0 +1,37 @@
+# RefCOCO / RefCOCO+ / RefCOCOg Dataset Config
+# Purpose: Strengthen complex natural language prompt understanding
+
+name: refcoco
+version: "1.0"
+
+# RefCOCO uses COCO 2014 images
+# Annotations are separate referring expression files
+splits:
+  train:
+    refcoco:
+      ann_file: /home/nthujerry123/datasets/refcoco/refs(unc).p
+      instances_file: /home/nthujerry123/datasets/refcoco/instances.json
+      img_dir: /work/nthujerry123/datasets/coco/train2014
+      weight: 0.5
+    refcoco_plus:
+      ann_file: /home/nthujerry123/datasets/refcoco+/refs(unc).p
+      instances_file: /home/nthujerry123/datasets/refcoco+/instances.json
+      img_dir: /work/nthujerry123/datasets/coco/train2014
+      weight: 0.3
+    refcocog:
+      ann_file: /home/nthujerry123/datasets/refcocog/refs(umd).p
+      instances_file: /home/nthujerry123/datasets/refcocog/instances.json
+      img_dir: /work/nthujerry123/datasets/coco/train2014
+      weight: 0.2
+  val:
+    refcoco:
+      ann_file: /home/nthujerry123/datasets/refcoco/refs(unc).p
+      instances_file: /home/nthujerry123/datasets/refcoco/instances.json
+      img_dir: /work/nthujerry123/datasets/coco/val2014
+      split: val
+
+# Language processing settings
+language:
+  max_prompt_length: 40       # RefCOCO expressions are typically short-medium
+  use_expression_augmentation: true  # Paraphrase expressions during training
+  expression_dropout: 0.1     # Randomly drop words to improve robustness

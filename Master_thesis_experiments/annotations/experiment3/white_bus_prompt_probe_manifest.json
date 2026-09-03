@@ -1,0 +1,70 @@
+[
+  {
+    "query_id": "white-bus-probe-1",
+    "example_id": "white-bus-probe-1",
+    "file_name": "9999938_00000_d_0000038.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The rightmost white bus closest to the bottom-right corner of the image.",
+    "layers": [{
+      "layer": 3,
+      "prompt": "the rightmost white bus closest to the bottom-right corner of the image",
+      "gt_boxes_xyxy": [[792.0, 646.0, 879.0, 785.0]],
+      "gt_source": "VisDrone exhaustive bus GT with manually verified white color and bottom-right spatial attribute",
+      "prompt_form": "short noun phrase"
+    }]
+  },
+  {
+    "query_id": "white-bus-probe-2",
+    "example_id": "white-bus-probe-2",
+    "file_name": "9999938_00000_d_0000038.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The rightmost of the two white buses at the bottom of the image.",
+    "layers": [{
+      "layer": 3,
+      "prompt": "the rightmost of the two white buses at the bottom of the image",
+      "gt_boxes_xyxy": [[792.0, 646.0, 879.0, 785.0]],
+      "gt_source": "VisDrone exhaustive bus GT with manually verified white color and bottom-right spatial attribute",
+      "prompt_form": "short noun phrase"
+    }]
+  },
+  {
+    "query_id": "white-bus-probe-3",
+    "example_id": "white-bus-probe-3",
+    "file_name": "9999938_00000_d_0000038.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The white bus immediately to the right of another white bus at the bottom of the image.",
+    "layers": [{
+      "layer": 3,
+      "prompt": "the white bus immediately to the right of another white bus at the bottom of the image",
+      "gt_boxes_xyxy": [[792.0, 646.0, 879.0, 785.0]],
+      "gt_source": "VisDrone exhaustive bus GT with manually verified white color and bottom-right spatial attribute",
+      "prompt_form": "short noun phrase"
+    }]
+  },
+  {
+    "query_id": "white-bus-probe-4",
+    "example_id": "white-bus-probe-4",
+    "file_name": "9999938_00000_d_0000038.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The narrow white bus at the bottom, directly right of the wider white bus.",
+    "layers": [{
+      "layer": 3,
+      "prompt": "the narrow white bus at the bottom directly right of the wider white bus",
+      "gt_boxes_xyxy": [[792.0, 646.0, 879.0, 785.0]],
+      "gt_source": "VisDrone exhaustive bus GT with manually verified white color and bottom-right spatial attribute",
+      "prompt_form": "short noun phrase"
+    }]
+  }
+]

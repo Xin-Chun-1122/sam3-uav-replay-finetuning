@@ -1,0 +1,54 @@
+{
+  "dataset": "RefDrone test",
+  "source_annotation": "/home/alien/sam3/Master_thesis_experiments/datasets/raw/RefDrone/RefDrone_test_mdetr.json",
+  "source_image_count": 1595,
+  "source_query_count": 3432,
+  "category_id_note": "annotation IDs are VisDrone 1-based; category table is 0-based",
+  "annotation_category_mapping": {
+    "1": "person",
+    "2": "person",
+    "4": "car",
+    "6": "truck",
+    "9": "bus",
+    "10": "motorcycle"
+  },
+  "categories": [
+    "person",
+    "car",
+    "truck",
+    "bus",
+    "motorcycle"
+  ],
+  "synonyms": {
+    "person": "human",
+    "car": "automobile",
+    "truck": "lorry",
+    "motorcycle": "motorbike"
+  },
+  "bus_synonym_policy": "not provided; excluded from synonym evaluation and retention",
+  "iou_threshold": 0.5,
+  "operating_threshold_policy": "reuse each model's frozen Experiment 1 validation threshold",
+  "negative_image_policy": "all unique RefDrone test images are evaluated for every category prompt",
+  "gt_policy": "Standard/synonym prompts and specificity Layer 1 use exhaustive VisDrone2019-DET evaluation GT for the same byte-identical images. Layers 2 and 3 use RefDrone attribute/referent GT. The already-frozen 50 images and prompts are unchanged.",
+  "specificity_selection": {
+    "seed": 42,
+    "examples": 50,
+    "per_category": {
+      "person": 10,
+      "car": 10,
+      "truck": 10,
+      "bus": 10,
+      "motorcycle": 10
+    },
+    "unique_images": 50,
+    "color_attribute_required": true,
+    "spatial_or_relational_phrase_required": true
+  },
+  "files": {
+    "category_units": "/home/alien/sam3/Master_thesis_experiments/annotations/experiment3/category_prompt_units.json",
+    "specificity_manifest": "/home/alien/sam3/Master_thesis_experiments/annotations/experiment3/specificity_50_manifest.json"
+  },
+  "full_category_gt_source": "/home/alien/sam3/Master_thesis_experiments/results/experiment1/scale_statistics/instances.csv",
+  "frozen_specificity_examples_preserved": true,
+  "layer3_prompt_form": "lower-case short noun phrase normalized from the original RefDrone expression; articles, copulas, and sentence-final punctuation removed; class nouns canonicalized"
+}

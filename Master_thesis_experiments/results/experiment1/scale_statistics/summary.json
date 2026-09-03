@@ -1,0 +1,48 @@
+{
+  "generated_at_utc": "2026-07-21T07:42:24.846884+00:00",
+  "dataset_root": "/home/alien/Downloads/VisDrone2019-DET-test-dev",
+  "dataset_image_count": 1610,
+  "missing_annotation_count": 0,
+  "missing_annotations": [],
+  "malformed_annotation_lines": 0,
+  "target_categories": [
+    "car",
+    "person",
+    "bus",
+    "van",
+    "truck",
+    "motorcycle"
+  ],
+  "category_mapping": {
+    "1": "person",
+    "2": "person",
+    "4": "car",
+    "5": "van",
+    "6": "truck",
+    "9": "bus",
+    "10": "motorcycle"
+  },
+  "scale_formula": "sqrt(width*height)",
+  "scale_ranges": {
+    "tiny": "s < 32",
+    "small": "32 <= s < 64",
+    "regular": "s >= 64"
+  },
+  "image_count_semantics": "number of unique images containing at least one target instance of the scale; scale image sets may overlap",
+  "images_containing_scale": {
+    "tiny": 1496,
+    "small": 1523,
+    "regular": 1164
+  },
+  "instances_by_scale": {
+    "tiny": 49213,
+    "small": 16365,
+    "regular": 7093
+  },
+  "boundary_instance_counts": {
+    "s_eq_32": 20,
+    "s_eq_64": 5
+  },
+  "total_target_instances": 72671,
+  "annotation_manifest_sha256": "9e1de65049338fcc62f2878640dce9297b87d3dec815782900a7a572e79cad41"
+}

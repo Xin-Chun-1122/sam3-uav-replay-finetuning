@@ -1,0 +1,16 @@
+Model,Condition,Frame Recall,Recovery Rate,AP50
+sam3_original,All events,0.29909447222597646,0.34375,0.12481060517951546
+sam3_original,Partial occlusion,0.3525329632199861,0.44,0.20236996644321598
+sam3_original,Temporary complete disappearance,0.2867242733699921,0.24,0.120900127307355
+sam3_original,Scale decrease and recovery,0.18970283344851416,0.26,0.0464524441180566
+sam3_original,Camera motion / blur,0.8085714285714286,0.8,0.7725574444236876
+sam3_native_id_tracker,All events,0.4284362751723206,0.5125,0.42574257425742573
+sam3_native_id_tracker,Partial occlusion,0.46634281748785567,0.52,0.46104374846403445
+sam3_native_id_tracker,Temporary complete disappearance,0.4516889238020424,0.4,0.4504566073518482
+sam3_native_id_tracker,Scale decrease and recovery,0.3417415342087077,0.56,0.34086533113121165
+sam3_native_id_tracker,Camera motion / blur,0.7485714285714286,0.8,0.7425742574257426
+sam3_adapted_with_replay,All events,0.26436004865522367,0.33125,0.11155854257832469
+sam3_adapted_with_replay,Partial occlusion,0.2626648160999306,0.36,0.11301820000818105
+sam3_adapted_with_replay,Temporary complete disappearance,0.30557737627651216,0.28,0.1256305348241555
+sam3_adapted_with_replay,Scale decrease and recovery,0.193503800967519,0.28,0.06832257224029585
+sam3_adapted_with_replay,Camera motion / blur,0.7142857142857143,0.7,0.6570372227096127

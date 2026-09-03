@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-21",
+  "device": "NVIDIA GeForce RTX 4060 Ti (16380 MiB)",
+  "image": "/home/alien/Downloads/VisDrone2019-DET-test-dev/images/9999963_00000_d_0000025.jpg",
+  "tests": {
+    "yolov8x": {
+      "status": "pass",
+      "imgsz": 640,
+      "confidence_for_smoke_test": 0.001,
+      "prediction_count": 204
+    },
+    "yolov8x_worldv2": {
+      "status": "pass",
+      "imgsz": 640,
+      "confidence_for_smoke_test": 0.001,
+      "prompts": ["car", "person", "bus", "van", "truck", "motorcycle"],
+      "prediction_count_at_max_dets": 300
+    },
+    "sam3_stage2b_unfrozen_merged": {
+      "status": "pass",
+      "max_inference_side": 960,
+      "confidence_for_smoke_test": 0.3,
+      "prompt": "car",
+      "prediction_count": 15,
+      "peak_gpu_memory_mib": 6244,
+      "sam3_tracker_tensors_preserved": 309
+    },
+    "sam3_best0623_epoch25_merged": {
+      "status": "pass",
+      "max_inference_side": 960,
+      "confidence_for_smoke_test": 0.3,
+      "prompt": "car",
+      "prediction_count": 20,
+      "peak_gpu_memory_mib": 6623,
+      "sam3_detector_tensors": 1156,
+      "sam3_tracker_tensors_preserved": 309,
+      "replay_status": "with replay"
+    }
+  },
+  "note": "Smoke-test thresholds are not final evaluation thresholds and must not be reported as test metrics."
+}

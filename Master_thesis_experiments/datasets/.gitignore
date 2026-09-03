@@ -1,0 +1,4 @@
+# Raw public datasets are reproducible downloads and should not be committed/uploaded.
+raw/**
+!raw/.gitkeep
+

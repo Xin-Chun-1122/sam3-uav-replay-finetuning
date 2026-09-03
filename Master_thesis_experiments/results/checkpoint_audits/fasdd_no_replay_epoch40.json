@@ -1,0 +1,30 @@
+{
+  "audit_date": "2026-07-21",
+  "classification": "without replay; new-task FASDD_UAV data only",
+  "provenance": {
+    "remote_training_run": "/work/nthujerry123/sam3/experiments/fasdd_finetune/checkpoints/checkpoint.pt",
+    "matching_config": "finetune_sam3/best/finetune_sam3_best/sam3/sam3/train/configs/fasdd/fasdd_text_finetune.yaml",
+    "documented_dataset": "FASDD_UAV, 25,097 images, fire and smoke",
+    "replay_dataset_documented": false
+  },
+  "raw_checkpoint": {
+    "path": "/home/alien/sam3/finetune_sam3/FASDD_UAV_model/checkpoint.pt",
+    "epoch": 40,
+    "model_tensor_count": 1106,
+    "sha256": "c530dcd6f058195a18c3c7ac6af4ffc494254737f57718520aca576e17f0b7b6"
+  },
+  "merged_checkpoint": {
+    "path": "/home/alien/sam3/Master_thesis_experiments/models/sam3_fasdd_no_replay_merged.pt",
+    "tensor_count": 1465,
+    "detector_tensor_count": 1156,
+    "tracker_tensor_count": 309,
+    "sha256": "561613394b4e93c444f745c019abb4716f4528637c0480a23de1be46b9bd9e1e"
+  },
+  "smoke_test": {
+    "status": "pass",
+    "prompt": "car",
+    "confidence": 0.3,
+    "prediction_count": 0,
+    "peak_gpu_memory_mib": 3908
+  }
+}

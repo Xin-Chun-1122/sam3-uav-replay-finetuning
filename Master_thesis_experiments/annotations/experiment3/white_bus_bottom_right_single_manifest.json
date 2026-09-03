@@ -1,0 +1,23 @@
+[
+  {
+    "query_id": "ppt-white-bus-bottom-right",
+    "example_id": "refdrone-white-bus-bottom-right-ppt",
+    "file_name": "9999938_00000_d_0000072.jpg",
+    "width": 1400,
+    "height": 788,
+    "category": "bus",
+    "attribute": "white",
+    "source_expression": "The bottommost white bus on the far right side of the road.",
+    "layers": [
+      {
+        "layer": 3,
+        "prompt": "the bottommost white bus on the far right side of the road",
+        "gt_boxes_xyxy": [
+          [1063.0, 573.0, 1172.0, 775.0]
+        ],
+        "gt_source": "RefDrone/VisDrone GT with manually verified white color, bottommost position, and far-right spatial attribute",
+        "prompt_form": "short noun phrase"
+      }
+    ]
+  }
+]

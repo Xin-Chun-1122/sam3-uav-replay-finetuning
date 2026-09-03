@@ -1,0 +1,599 @@
+{
+  "protocol": {
+    "track_id_source": "sam3_native",
+    "target_id_selection": "fixed native SAM3 obj_id selected on pre-event frames; GT-point baseline uses native obj_id=1",
+    "frame_recall": "same native obj_id IoU>=0.5 matches / visible target GT frames",
+    "recovery_rate": "same native obj_id matches within first 10 visible post-event frames",
+    "track_ap50": "101-point AP50 using the fixed native track prediction against the event target"
+  },
+  "prediction_metadata": {
+    "model_name": "sam3_original",
+    "checkpoint": "/home/alien/.cache/huggingface/hub/models--facebook--sam3/blobs/9999e2341ceef5e136daa386eecb55cb414446a00ac2b55eb2dfd2f7c3cf8c9e",
+    "init_mode": "text",
+    "track_id_source": "sam3_native",
+    "events_requested": 1,
+    "events_completed": 1,
+    "detection_threshold": 0.48943960666656494,
+    "new_detection_threshold": 0.7,
+    "max_objects": 10,
+    "input_max_side": 1008
+  },
+  "events_expected": 160,
+  "events_evaluated": 1,
+  "missing_events": [
+    "partial_occlusion-002",
+    "partial_occlusion-003",
+    "partial_occlusion-004",
+    "partial_occlusion-005",
+    "partial_occlusion-006",
+    "partial_occlusion-007",
+    "partial_occlusion-008",
+    "partial_occlusion-009",
+    "partial_occlusion-010",
+    "partial_occlusion-011",
+    "partial_occlusion-012",
+    "partial_occlusion-013",
+    "partial_occlusion-014",
+    "partial_occlusion-015",
+    "partial_occlusion-016",
+    "partial_occlusion-017",
+    "partial_occlusion-018",
+    "partial_occlusion-019",
+    "partial_occlusion-020",
+    "partial_occlusion-021",
+    "partial_occlusion-022",
+    "partial_occlusion-023",
+    "partial_occlusion-024",
+    "partial_occlusion-025",
+    "partial_occlusion-026",
+    "partial_occlusion-027",
+    "partial_occlusion-028",
+    "partial_occlusion-029",
+    "partial_occlusion-030",
+    "partial_occlusion-031",
+    "partial_occlusion-032",
+    "partial_occlusion-033",
+    "partial_occlusion-034",
+    "partial_occlusion-035",
+    "partial_occlusion-036",
+    "partial_occlusion-037",
+    "partial_occlusion-038",
+    "partial_occlusion-039",
+    "partial_occlusion-040",
+    "partial_occlusion-041",
+    "partial_occlusion-042",
+    "partial_occlusion-043",
+    "partial_occlusion-044",
+    "partial_occlusion-045",
+    "partial_occlusion-046",
+    "partial_occlusion-047",
+    "partial_occlusion-048",
+    "partial_occlusion-049",
+    "partial_occlusion-050",
+    "temporary_complete_disappearance-001",
+    "temporary_complete_disappearance-002",
+    "temporary_complete_disappearance-003",
+    "temporary_complete_disappearance-004",
+    "temporary_complete_disappearance-005",
+    "temporary_complete_disappearance-006",
+    "temporary_complete_disappearance-007",
+    "temporary_complete_disappearance-008",
+    "temporary_complete_disappearance-009",
+    "temporary_complete_disappearance-010",
+    "temporary_complete_disappearance-011",
+    "temporary_complete_disappearance-012",
+    "temporary_complete_disappearance-013",
+    "temporary_complete_disappearance-014",
+    "temporary_complete_disappearance-015",
+    "temporary_complete_disappearance-016",
+    "temporary_complete_disappearance-017",
+    "temporary_complete_disappearance-018",
+    "temporary_complete_disappearance-019",
+    "temporary_complete_disappearance-020",
+    "temporary_complete_disappearance-021",
+    "temporary_complete_disappearance-022",
+    "temporary_complete_disappearance-023",
+    "temporary_complete_disappearance-024",
+    "temporary_complete_disappearance-025",
+    "temporary_complete_disappearance-026",
+    "temporary_complete_disappearance-027",
+    "temporary_complete_disappearance-028",
+    "temporary_complete_disappearance-029",
+    "temporary_complete_disappearance-030",
+    "temporary_complete_disappearance-031",
+    "temporary_complete_disappearance-032",
+    "temporary_complete_disappearance-033",
+    "temporary_complete_disappearance-034",
+    "temporary_complete_disappearance-035",
+    "temporary_complete_disappearance-036",
+    "temporary_complete_disappearance-037",
+    "temporary_complete_disappearance-038",
+    "temporary_complete_disappearance-039",
+    "temporary_complete_disappearance-040",
+    "temporary_complete_disappearance-041",
+    "temporary_complete_disappearance-042",
+    "temporary_complete_disappearance-043",
+    "temporary_complete_disappearance-044",
+    "temporary_complete_disappearance-045",
+    "temporary_complete_disappearance-046",
+    "temporary_complete_disappearance-047",
+    "temporary_complete_disappearance-048",
+    "temporary_complete_disappearance-049",
+    "temporary_complete_disappearance-050",
+    "scale_decrease_and_recovery-001",
+    "scale_decrease_and_recovery-002",
+    "scale_decrease_and_recovery-003",
+    "scale_decrease_and_recovery-004",
+    "scale_decrease_and_recovery-005",
+    "scale_decrease_and_recovery-006",
+    "scale_decrease_and_recovery-007",
+    "scale_decrease_and_recovery-008",
+    "scale_decrease_and_recovery-009",
+    "scale_decrease_and_recovery-010",
+    "scale_decrease_and_recovery-011",
+    "scale_decrease_and_recovery-012",
+    "scale_decrease_and_recovery-013",
+    "scale_decrease_and_recovery-014",
+    "scale_decrease_and_recovery-015",
+    "scale_decrease_and_recovery-016",
+    "scale_decrease_and_recovery-017",
+    "scale_decrease_and_recovery-018",
+    "scale_decrease_and_recovery-019",
+    "scale_decrease_and_recovery-020",
+    "scale_decrease_and_recovery-021",
+    "scale_decrease_and_recovery-022",
+    "scale_decrease_and_recovery-023",
+    "scale_decrease_and_recovery-024",
+    "scale_decrease_and_recovery-025",
+    "scale_decrease_and_recovery-026",
+    "scale_decrease_and_recovery-027",
+    "scale_decrease_and_recovery-028",
+    "scale_decrease_and_recovery-029",
+    "scale_decrease_and_recovery-030",
+    "scale_decrease_and_recovery-031",
+    "scale_decrease_and_recovery-032",
+    "scale_decrease_and_recovery-033",
+    "scale_decrease_and_recovery-034",
+    "scale_decrease_and_recovery-035",
+    "scale_decrease_and_recovery-036",
+    "scale_decrease_and_recovery-037",
+    "scale_decrease_and_recovery-038",
+    "scale_decrease_and_recovery-039",
+    "scale_decrease_and_recovery-040",
+    "scale_decrease_and_recovery-041",
+    "scale_decrease_and_recovery-042",
+    "scale_decrease_and_recovery-043",
+    "scale_decrease_and_recovery-044",
+    "scale_decrease_and_recovery-045",
+    "scale_decrease_and_recovery-046",
+    "scale_decrease_and_recovery-047",
+    "scale_decrease_and_recovery-048",
+    "scale_decrease_and_recovery-049",
+    "scale_decrease_and_recovery-050",
+    "camera_motion_or_blur-001",
+    "camera_motion_or_blur-002",
+    "camera_motion_or_blur-003",
+    "camera_motion_or_blur-004",
+    "camera_motion_or_blur-005",
+    "camera_motion_or_blur-006",
+    "camera_motion_or_blur-007",
+    "camera_motion_or_blur-008",
+    "camera_motion_or_blur-009",
+    "camera_motion_or_blur-010"
+  ],
+  "overall": {
+    "events": 1,
+    "frame_recall": 1.0,
+    "recovery_rate": 1.0,
+    "redetection_rate_any_id": 1.0,
+    "track_ap50": 1.0,
+    "visible_gt_frames": 61,
+    "matched_frames": 61,
+    "recovery_eligible_events": 1,
+    "phase_frame_recall": {
+      "pre": {
+        "matches": 15,
+        "gt_frames": 15,
+        "frame_recall": 1.0
+      },
+      "low_reliability": {
+        "matches": 43,
+        "gt_frames": 43,
+        "frame_recall": 1.0
+      },
+      "post": {
+        "matches": 3,
+        "gt_frames": 3,
+        "frame_recall": 1.0
+      }
+    },
+    "median_event_frame_recall": 1.0
+  },
+  "by_condition": {
+    "camera_motion_or_blur": {
+      "events": 0,
+      "frame_recall": 0.0,
+      "recovery_rate": 0.0,
+      "redetection_rate_any_id": 0.0,
+      "track_ap50": 0.0,
+      "visible_gt_frames": 0,
+      "matched_frames": 0,
+      "recovery_eligible_events": 0,
+      "phase_frame_recall": {
+        "pre": {
+          "matches": 0,
+          "gt_frames": 0,
+          "frame_recall": null
+        },
+        "low_reliability": {
+          "matches": 0,
+          "gt_frames": 0,
+          "frame_recall": null
+        },
+        "post": {
+          "matches": 0,
+          "gt_frames": 0,
+          "frame_recall": null
+        }
+      },
+      "median_event_frame_recall": null
+    },
+    "partial_occlusion": {
+      "events": 1,
+      "frame_recall": 1.0,
+      "recovery_rate": 1.0,
+      "redetection_rate_any_id": 1.0,
+      "track_ap50": 1.0,
+      "visible_gt_frames": 61,
+      "matched_frames": 61,
+      "recovery_eligible_events": 1,
+      "phase_frame_recall": {
+        "pre": {
+          "matches": 15,
+          "gt_frames": 15,
+          "frame_recall": 1.0
+        },
+        "low_reliability": {
+          "matches": 43,
+          "gt_frames": 43,
+          "frame_recall": 1.0
+        },
+        "post": {
+          "matches": 3,
+          "gt_frames": 3,
+          "frame_recall": 1.0
+        }
+      },
+      "median_event_frame_recall": 1.0
+    },
+    "scale_decrease_and_recovery": {
+      "events": 0,
+      "frame_recall": 0.0,
+      "recovery_rate": 0.0,
+      "redetection_rate_any_id": 0.0,
+      "track_ap50": 0.0,
+      "visible_gt_frames": 0,
+      "matched_frames": 0,
+      "recovery_eligible_events": 0,
+      "phase_frame_recall": {
+        "pre": {
+          "matches": 0,
+          "gt_frames": 0,
+          "frame_recall": null
+        },
+        "low_reliability": {
+          "matches": 0,
+          "gt_frames": 0,
+          "frame_recall": null
+        },
+        "post": {
+          "matches": 0,
+          "gt_frames": 0,
+          "frame_recall": null
+        }
+      },
+      "median_event_frame_recall": null
+    },
+    "temporary_complete_disappearance": {
+      "events": 0,
+      "frame_recall": 0.0,
+      "recovery_rate": 0.0,
+      "redetection_rate_any_id": 0.0,
+      "track_ap50": 0.0,
+      "visible_gt_frames": 0,
+      "matched_frames": 0,
+      "recovery_eligible_events": 0,
+      "phase_frame_recall": {
+        "pre": {
+          "matches": 0,
+          "gt_frames": 0,
+          "frame_recall": null
+        },
+        "low_reliability": {
+          "matches": 0,
+          "gt_frames": 0,
+          "frame_recall": null
+        },
+        "post": {
+          "matches": 0,
+          "gt_frames": 0,
+          "frame_recall": null
+        }
+      },
+      "median_event_frame_recall": null
+    }
+  },
+  "event_results": [
+    {
+      "event_id": "partial_occlusion-001",
+      "condition": "partial_occlusion",
+      "selected_sam3_obj_id": 9,
+      "visible_gt_frames": 61,
+      "matched_frames": 61,
+      "frame_recall": 1.0,
+      "recovery_eligible": true,
+      "same_id_recovered": true,
+      "any_id_recovered": true,
+      "labelled": [
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ],
+        [
+          0.8787879347801208,
+          1
+        ]
+      ],
+      "phase_counts": {
+        "pre": [
+          15,
+          15
+        ],
+        "low_reliability": [
+          43,
+          43
+        ],
+        "post": [
+          3,
+          3
+        ]
+      }
+    }
+  ]
+}

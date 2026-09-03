@@ -1,0 +1,16 @@
+{
+  "dataset": "FASDD-UAV",
+  "json_path": "/home/alien/Downloads/FASDD_UAV (1)/annotations/COCO_UAV/Annotations/test.json",
+  "images_root": "/home/alien/Downloads/FASDD_UAV (1)/images",
+  "total_images_in_json": 4181,
+  "found_images": 4181,
+  "missing_images": 0,
+  "duplicate_basenames": [],
+  "total_annotations": 8926,
+  "per_class_counts": {
+    "smoke": 2877,
+    "fire": 6049
+  },
+  "images_without_annotations": 1997,
+  "missing_image_names": []
+}
